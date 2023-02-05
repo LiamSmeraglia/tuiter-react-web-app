@@ -1,0 +1,155 @@
+.bg-color-black {
+    background-color: black;
+}
+
+/* Text Styles */
+
+.text-title {
+    font-size: 20px;
+    font-family: Arial;
+    color: rgb(231, 233, 234);
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.text-primary {
+    font-size: 15px;
+    font-family: Arial;
+    color: rgb(231, 233, 234);
+    font-weight: bold;
+}
+
+.text-secondary {
+    font-size: 15px;
+    font-family: Arial;
+    text-decoration: none;
+    color: rgb(113, 118, 123);
+}
+
+.text-red {
+    font-size: 15px;
+    font-family: Arial;
+    text-decoration: none;
+    color: rgb(249 25 128);
+}
+
+.text-body {
+    font-size: 15px;
+    font-family: Arial;
+    color: rgb(231, 233, 234);
+    text-decoration: none;
+}
+
+/* Padding / Margin */
+
+.padding-sides-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.padding-vert-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.padding-all-12 {
+    padding: 12px;
+}
+
+.margin-right-12 {
+    margin-right: 12px;
+}
+
+.margin-right-4 {
+    margin-right: 4px;
+}
+
+.margin-bottom-4 {
+    margin-bottom: 4px;
+}
+
+.margin-top-12 {
+    margin-top: 12px;
+}
+
+/* Positioning */
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 8px;
+    right: 8px;
+    width: calc(100% - 48px);
+    z-index: 500;
+    background-color: black;
+}
+
+.max-width {
+    width: calc(100% - 32px);
+}
+
+.width-48px {
+    width: 48px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+/* margin to account for sticky header */
+.first-post {
+    z-index: 1;
+    margin-top: 67px;
+}
+
+/* Borders */
+
+.border-all-around {
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.border-no-top {
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+
+.circle-radius {
+    border-radius: 50%;
+}
+
+.border-radius-top-16 {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.border-radius-bottom-16 {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+/* Size */
+
+.w-48-h-48 {
+    width: 48px;
+    height: 48px;
+}
+
+.w-14-h-14 {
+    width: 14px;
+    height: 14px;
+}
+
+.w-grow {
+    flex: 1;
+}
+
+.size-article-image {
+    width: 504px;
+    height: 264px;
+}
+
+.w-480 {
+    width: 480px;
+}
+
