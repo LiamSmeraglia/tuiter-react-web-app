@@ -1,0 +1,59 @@
+.img-size-48 {
+    width: 48px;
+    height: 48px;
+}
+
+.flex-dir-row {
+    flex-direction: row;
+}
+
+.float-right {
+    float: right;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.border-left {
+    border-bottom-left-radius: 50rem;
+    border-top-left-radius: 50rem;
+    border-left: solid 1px rgb(206, 212, 218);
+    border-top: solid 1px rgb(206, 212, 218);
+    border-bottom: solid 1px rgb(206, 212, 218);
+}
+
+.border-right {
+    border-bottom-right-radius: 50rem;
+    border-top-right-radius: 50rem;
+    border-right: solid 1px rgb(206, 212, 218);
+    border-top: solid 1px rgb(206, 212, 218);
+    border-bottom: solid 1px rgb(206, 212, 218);
+    border-left: none;
+}
+
+.image-text {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: white;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: calc((2/3) * 100%);
+}
+
+.trend-img-size {
+    height: 100px;
+    width: 100px;
+}

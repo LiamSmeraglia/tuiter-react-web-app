@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link href="../../vendors/bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        rel="stylesheet"/>
+  <link href="index2.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-1">
+      <!-- Navigator -->
+      <div class="col-sm-2 col-lg-1 col-xl-2 me-3">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <i class="fab fa-twitter"></i><br/>
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-home"></i>
+            <span class="d-none d-xl-inline-block">Home</span><br/>
+          </li>
+          <li class="list-group-item active">
+            <i class="fas fa-hashtag"></i>
+            <span class="d-none d-xl-inline-block">Explore</span><br/>
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-bell"></i>
+            <span class="d-none d-xl-inline-block">Notifications</span><br/>
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-envelope"></i>
+            <span class="d-none d-xl-inline-block">Messages</span><br/>
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-bookmark"></i>
+            <span class="d-none d-xl-inline-block">Bookmarks</span><br/>
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-list"></i>
+            <span class="d-none d-xl-inline-block">Lists</span><br/>
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-user"></i>
+            <span class="d-none d-xl-inline-block">Profile</span><br/>
+          </li>
+          <li class="list-group-item">
+            <i class="fas fa-ellipsis-h"></i>
+            <span class="d-none d-xl-inline-block">More</span><br/>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-primary mt-1 w-100 rounded-pill">
+          Tweet
+        </button>
+      </div>
+      <!-- Main content -->
+      <div class="col-sm-9 col-lg-7 col-xl-6 me-lg-3">
+        <!-- Search bar -->
+        <div class="d-flex flex-row">
+          <div class="d-flex flex-row flex-fill">
+            <div class="h-100 ps-1 border-left d-flex">
+              <label for="search" class="rounded-pill align-self-center">
+                <i class="fas fa-search ms-1"></i>
+              </label>
+            </div>
+            <input id="search" class="form-control flex-fill border-right bg-white" placeholder="Search Tuiter"></input>
+          </div>
+          <i class="fas fa-cog fa-2x ms-3 align-self-center" style="color: #0d6efd"></i>
+        </div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs mt-2">
+          <li class="nav-item disabled">
+            <a class="nav-link active" href="#">For You</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item d-none d-md-block">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+        </ul>
+        <!-- Content -->
+        <div class="w-100 image-container">
+          <img class="w-100 mt-2" src="images/starship.webp"/>
+          <h2 class="image-text ms-2">SpaceX's Starship</h2>
+        </div>
+        <ul class="list-group w-100">
+          <li class="list-group-item w-100">
+            <img class="float-end trend-img-size rounded-2 ms-2" src="images/react.png"/>
+            <span class="text-secondary">Web Development</span><br/>
+            <span class="text-black"><b>ReactJS</b></span>
+            <i class="fas fa-check-circle"></i>
+            <span class="text-secondary"> - 2h</span><br/>
+            <span class="text-black"><b>React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs</b></span>
+          </li>
+          <li class="list-group-item w-100">
+            <img class="float-end trend-img-size rounded-2 ms-2" src="images/js.png"/>
+            <span class="text-black"><b>JavaScript</b></span>
+            <i class="fas fa-check-circle"></i>
+            <span class="text-secondary"> - 2h</span><br/>
+            <span class="text-black"><b>JavaScript is programming language that can run on browsers as well as desktops</b></span><br/>
+            <span class="text-secondary">123K Tweets</span>
+          </li>
+          <li class="list-group-item w-100">
+            <img class="float-end trend-img-size rounded-2 ms-2" src="images/jquery.gif"/>
+            <span class="text-secondary">Web Development</span><br/>
+            <span class="text-black"><b>jQuery</b></span><br/>
+            <span class="text-secondary">123K Tweets</span>
+          </li>
+          <li class="list-group-item w-100">
+            <img class="float-end trend-img-size rounded-2 ms-2" src="images/node.png"/>
+            <span class="text-secondary">Web Development</span><br/>
+            <span class="text-black"><b>NodeJS</b></span>
+            <i class="fas fa-check-circle"></i>
+            <span class="text-secondary"> - 2h</span><br/>
+            <span class="text-secondary">123K Tweets</span>
+          </li>
+        </ul>
+      </div>
+      <!-- Who to follow -->
+      <div class="d-none d-lg-block col-lg-3 p-0">
+        <ul class="list-group w-100 font-size-14 text-nowrap">
+          <li class="list-group-item w-100 p-1 ps-3">
+            <span><b>Who to follow</b></span>
+          </li>
+          <li class="list-group-item w-100 d-flex flex-row">
+            <img class="rounded-circle img-size-48 float-left me-xl-2 align-self-center" src="images/java.png"/>
+            <div class="float-left flex-fill align-self-center">
+              <span><b>Java</b></span>
+              <i class="fas fa-check-circle"></i><br/>
+              <span>@Java</span>
+            </div>
+            <div class="float-right pt-2 pb-2">
+              <button type="button" class="btn btn-primary rounded-pill float-right">Follow</button>
+            </div>
+          </li>
+          <li class="list-group-item w-100 d-flex flex-row">
+            <img class="rounded-circle img-size-48 float-left me-xl-2 align-self-center" src="images/relativity.jpeg"/>
+            <div class="float-left flex-xl-fill flex-lg-shrink-1 flex-xl-shrink-0 align-self-center">
+              <span><b>Relativity Space</b></span>
+              <i class="fas fa-check-circle"></i><br/>
+              <span>@relativityspace</span>
+            </div>
+            <div class="float-right pt-2 pb-2">
+              <button type="button" class="btn btn-primary rounded-pill float-right">Follow</button>
+            </div>
+          </li>
+          <li class="list-group-item w-100 d-flex flex-row">
+            <img class="rounded-circle img-size-48 float-left me-xl-2 align-self-center" src="images/virgin.png"/>
+            <div class="float-left flex-fill align-self-center">
+              <span><b>Virgin Galactic</b></span>
+              <i class="fas fa-check-circle"></i><br/>
+              <span>@virgingalactic</span>
+            </div>
+            <div class="float-right pt-2 pb-2">
+              <button type="button" class="btn btn-primary rounded-pill float-right">Follow</button>
+            </div>
+          </li>
+          <li class="list-group-item w-100 d-flex flex-row">
+            <img class="rounded-circle img-size-48 float-left me-xl-2 align-self-center" src="images/nasa.jpeg"/>
+            <div class="float-left flex-fill align-self-center">
+              <span><b>NASA</b></span>
+              <i class="fas fa-check-circle"></i><br/>
+              <span>@NASA</span>
+            </div>
+            <div class="float-right pt-2 pb-2">
+              <button type="button" class="btn btn-primary rounded-pill float-right">Follow</button>
+            </div>
+          </li>
+          <li class="list-group-item w-100 d-flex flex-row">
+            <img class="rounded-circle img-size-48 float-left me-xl-2 align-self-center" src="images/tesla.png"/>
+            <div class="float-left flex-fill align-self-center">
+              <span><b>Tesla</b></span>
+              <i class="fas fa-check-circle"></i><br/>
+              <span>@Tesla</span>
+            </div>
+            <div class="float-right pt-2 pb-2">
+              <button type="button" class="btn btn-primary rounded-pill float-right">Follow</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
