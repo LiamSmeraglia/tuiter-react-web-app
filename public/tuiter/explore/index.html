@@ -1,108 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://bootswatch.com/5/cyborg/bootstrap.min.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+            integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+            crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <title>Explore</title>
-    <link href="index.css"
-          rel="stylesheet"/>
+    <title>Explore screen</title>
 </head>
-<body class="bg-color-black">
-    <div class="search-container">
-        <div class="search-bar rounded-corners">
-            <form id="search-bar" class="search-form">
-                <label>
-                    <div class="flexbox rounded-corners border-container">
-                        <div class="width-42px">
-                            <img class="search-icon" src="images/magnifying-glass-solid.svg"/>
-                        </div>
-                        <input type="text"
-                               for="search-bar"
-                               placeholder="Search Tuiter"
-                               class="search-input rounded-corners"/>
-                    </div>
-                </label>
-            </form>
-        </div>
-        <a href="explore-settings.html">
-            <img class="gear-icon" src="images/gear-solid.svg"/>
-        </a>
-    </div>
-    <div class="topic-bar">
-        <div class="topic-item selected-topic">
-            <a class="topic-text"><b>For You</b></a>
-        </div>
-        <div class="topic-item">
-            <a class="topic-text">Trending</a>
-        </div>
-        <div class="topic-item">
-            <a class="topic-text">COVID-19</a>
-        </div>
-        <div class="topic-item">
-            <a class="topic-text">News</a>
-        </div>
-        <div class="topic-item">
-            <a class="topic-text">Sports</a>
-        </div>
-        <div class="topic-item">
-            <a class="topic-text">Entertainment</a>
-        </div>
-    </div>
-    <div class="trend-container">
-        <div class="trend-content">
-            <img class="ellipse-icon" src="images/ellipsis-solid.svg"/>
-            <div><span class="small-text">Trending in Sports</span></div>
-            <div class="large-text-container"><span class="large-text"><b>R.J. Barrett</b></span></div>
-            <div><span class="small-text">5,218 Tweets</span></div>
-        </div>
-    </div>
-    <div class="trend-container">
-        <div class="trend-content">
-            <img class="ellipse-icon" src="images/ellipsis-solid.svg"/>
-            <div><span class="small-text">Trending in Music</span></div>
-            <div class="large-text-container"><span class="large-text"><b>Lil Yachty</b></span></div>
-            <div><span class="small-text">55.5k Tweets</span></div>
-        </div>
-    </div>
-    <div class="trend-container">
-        <div class="trend-content">
-            <div>
-                <img class="article-thumbnail" src="images/ribs.jpeg"/>
-            </div>
-            <div>
-                <span class="source-text"><b>The New York Times</b></span>
-                <span class="small-text">. Yesterday</span>
-            </div>
-            <div class="large-text-container"><a class="large-text" href="https://www.nytimes.com/2023/02/02/dining/baby-back-ribs-recipe.html"><b>The Juicy Secret to Stellar Baby Back Ribs</b></a></div>
-        </div>
-    </div>
-    <div class="trend-container">
-        <div class="trend-content">
-            <div>
-                <img class="article-thumbnail" src="images/knicks.png"/>
-            </div>
-            <div><span class="small-text">Sports . LIVE</span></div>
-            <div class="large-text-container"><a class="large-text" href="https://theathletic.com/nba/team/knicks/"><b>New York Knicks updates as they approach NBA trade deadline</b></a></div>
-        </div>
-    </div>
-    <div class="trend-container">
-        <div class="trend-content">
-            <div>
-                <img class="article-thumbnail" src="images/kyrie.avif"/>
-            </div>
-            <div>
-                <span class="source-text"><b>The Athletic</b></span>
-                <span class="small-text">. Yesterday</span>
-            </div>
-            <div class="large-text-container"><a class="large-text" href="https://theathletic.com/4154256/2023/02/03/kyrie-irving-nets-trade-request/"><b>Nets’ Kyrie Irving requests trade as Lakers, Suns, Mavericks, Clippers emerge as potential suitors: Sources</b></a></div>
-        </div>
-    </div>
-    <div class="trend-container">
-        <div class="trend-content">
-            <img class="ellipse-icon" src="images/ellipsis-solid.svg"/>
-            <div><span class="small-text">Trending in United States</span></div>
-            <div class="large-text-container"><span class="large-text"><b>Banana Bread</b></span></div>
-            <div><span class="small-text">1,259 Tweets</span></div>
-        </div>
-    </div>
+<body>
+<div class="container" id="wd-explore"></div>
+<script src="index.js" type="module"></script>
+
 </body>
 </html>
