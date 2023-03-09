@@ -33,9 +33,9 @@ const ExploreComponent = () => {
           </li>
         </ul>
         <!-- Content -->
-        <div class="w-100 image-container">
+        <div class="w-100 wd-image-container">
           <img class="w-100 mt-2" src="../explore/images/starship.webp"/>
-          <h2 class="image-text ms-2">SpaceX's Starship</h2>
+          <h2 class="wd-image-text ms-2">SpaceX's Starship</h2>
         </div>
         ${PostSummaryList()}
     `)
