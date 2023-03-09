@@ -14,7 +14,7 @@ const PostSummaryItem = (
     if (!post.title) {
         return(
           <div className="list-group-item w-100">
-            <img className="float-end wd-trend-img-size rounded-2 ms-2" src={post.image}/>
+            <img className="float-end wd-trend-img-size rounded-2 ms-2" alt="" src={post.image}/>
             <span className="text-secondary">{post.topic}</span><br/>
             <span className="text-black"><b>{post.userName}</b></span>
             <i className="fas fa-check-circle"></i>
@@ -26,7 +26,7 @@ const PostSummaryItem = (
     if (!post.userName) {
         return(
           <div className="list-group-item w-100">
-            <img className="float-end wd-trend-img-size rounded-2 ms-2" src={post.image}/>
+            <img className="float-end wd-trend-img-size rounded-2 ms-2" alt="" src={post.image}/>
             <span className="text-secondary">{post.topic}</span><br/>
             <span className="text-black"><b>{post.title}</b></span><br/>
             <span className="text-secondary">{post.tweets} Tweets</span>
@@ -36,7 +36,7 @@ const PostSummaryItem = (
     if (!post.topic) {
         return(
           <div className="list-group-item w-100">
-            <img className="float-end wd-trend-img-size rounded-2 ms-2" src={post.image}/>
+            <img className="float-end wd-trend-img-size rounded-2 ms-2" alt="" src={post.image}/>
             <span className="text-black"><b>{post.userName}</b></span>
             <i className="fas fa-check-circle"></i>
             <span className="text-secondary"> - {post.time}</span><br/>
@@ -47,7 +47,7 @@ const PostSummaryItem = (
     }
     return(
         <div className="list-group-item w-100">
-            <img className="float-end wd-trend-img-size rounded-2 ms-2" src={post.image}/>
+            <img className="float-end wd-trend-img-size rounded-2 ms-2" alt="" src={post.image}/>
             <span className="text-secondary">{post.topic}</span><br/>
             <span className="text-black"><b>{post.userName}</b></span>
             <i className="fas fa-check-circle"></i>
