@@ -1,29 +1,34 @@
 import React from "react";
-const NavigationSidebar = (
-    {
-        active = 'explore'
+import {useSelector, useDispatch} from "react-redux";
+import {navigateTo} from "../reducers/nav-reducer";
+
+const NavigationSidebar = () => {
+    const active = useSelector(state => state.nav);
+    const dispatch = useDispatch();
+    const handleNavigate = (to) => {
+        dispatch(navigateTo(to));
     }
-) => {
     return (
         <div className={"list-group"}>
             <a className={"list-group-item"}
                href={"/"}>
                 <i className="bi bi-twitter me-2"></i>
             </a>
-            <a className={`list-group-item ${active === 'home'?'active':''}`}
-               href={"/"}>
+            <button onClick={() => handleNavigate('home')}
+                className={`text-start list-group-item ${active === 'home'?'active':''}`}>
                 <i className="bi bi-house me-2"></i>
                 <span className={'d-none d-xl-inline-block'}>
                     Home
                 </span>
-            </a>
-            <a className={`list-group-item ${active === 'explore'?'active':''}`}
-               href={"/"}>
+            </button>
+            <button onClick={() => handleNavigate('explore')}
+                className={`text-start list-group-item ${active === 'explore'?'active':''}`
+            }>
                 <i className="bi bi-hash me-2"></i>
                 <span className={'d-none d-xl-inline-block'}>
                     Explore
                 </span>
-            </a>
+            </button>
             <a className={`list-group-item ${active === 'notifications'?'active':''}`}
                href={"/"}>
                 <i className="bi bi-bell me-2"></i>

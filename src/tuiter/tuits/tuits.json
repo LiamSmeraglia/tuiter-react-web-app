@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "/images/spacex.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "Elon Musk Foments More Geopolitical Controversy With Ukraine Internet Dispute The world’s richest man, whose Starlink internet service is critical to the Ukrainian Army, said he could not “indefinitely” fund the system’s use in Ukraine."
+  },
+  {
+    "_id": 123,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+    "time": "2h",
+    "image": "/images/spacex.png",
+    "liked": true,
+    "replies": 24,
+    "retuits": 39,
+    "likes": 195,
+    "handle": "@spacex",
+    "tuit": "Elon Musk suggests making Taiwan a 'special administrative zone' similar to Hong Kong"
+  },
+  {
+    "_id": 345,
+    "topic": "Energy",
+    "userName": "Tesla",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",
+    "image": "/images/tesla.png",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@Tesla",
+    "tuit": "Tesla Fired Buffalo Workers Seeking to Organize, Union Says. A filing to the National Labor Relations Board called the dismissals retaliatory. The carmaker denied the allegation, saying they were based on performance."
+  }
+]
