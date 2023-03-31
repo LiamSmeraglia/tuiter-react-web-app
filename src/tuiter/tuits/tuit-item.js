@@ -1,7 +1,8 @@
 import React from 'react';
 import {useDispatch} from "react-redux";
 import './tuit-item.css';
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+import TuitStats from "./tuit-stats";
 
 const TuitItem = (
     {
@@ -23,7 +24,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id))
+        dispatch(deleteTuitThunk(id))
     }
     return(
         <div className="list-group-item w-100">
@@ -38,6 +39,9 @@ const TuitItem = (
                     <i className="fas fa-check-circle"></i>
                     <span className="text-secondary">{tuit.handle} - {tuit.time}</span><br/>
                     <span className="text-black">{tuit.tuit}</span>
+                    <br/>
+                    <br/>
+                    <TuitStats tuit={tuit}/>
                 </div>
             </div>
         </div>

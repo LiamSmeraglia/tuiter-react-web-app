@@ -10,7 +10,7 @@ import navReducer from "./reducers/nav-reducer";
 import MainContent from "./main-content";
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, nav: navReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer, nav: navReducer}});
 
 function Tuiter() {
     return(
